@@ -1,6 +1,6 @@
 import os
 
-# AUTH_TYPE = 1  # Database Authentication
+AUTH_TYPE = 1  # Database Authentication
 AUTH_USER_REGISTRATION = True
 AUTH_USER_REGISTRATION_ROLE = "Public"
 
@@ -41,3 +41,11 @@ RECAPTCHA_USE_SSL = False
 RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC')
 RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE')
 RECAPTCHA_OPTIONS = {'theme': 'white'}
+
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_PORT = os.getenv("MAIL_PORT")
+MAIL_USERNAME = os.getenv("MAIL_USERNAME")
+MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
+MAIL_DEFAULT_SENDER = os.getenv("MAIL_PASSWORD")
