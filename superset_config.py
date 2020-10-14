@@ -1,7 +1,7 @@
 import os
 
 # AUTH_TYPE = 1  # Database Authentication
-# AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION = True
 AUTH_USER_REGISTRATION_ROLE = "Public"
 
 # Superset specific config
