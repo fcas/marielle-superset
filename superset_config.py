@@ -31,6 +31,11 @@ WTF_CSRF_TIME_LIMIT = 3600
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = os.getenv("MAPBOX_API_KEY")
 
+# Grant public role the same set of permissions as for the GAMMA role.
+# This is useful if one wants to enable anonymous users to view
+# dashboards. Explicit grant on specific datasets is still required.
+PUBLIC_ROLE_LIKE_GAMMA = True
+
 SESSION_COOKIE_HTTPONLY = False
 
 SESSION_COOKIE_SAMESITE = None
